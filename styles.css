@@ -163,7 +163,7 @@ body {
 }
 
 .download-btn:hover {
-    background-color: #357ABD; /* Darker background on hover */
+    background-color: #c546bf; /* Darker background on hover */
     transform: translateY(-2px); /* Raise effect on hover */
 }
 
