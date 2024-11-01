@@ -8,14 +8,13 @@ body {
     background-image: url('images/background.jpg'); /* Path to your background image */
     background-size: cover; /* Cover the entire background */
     background-attachment: fixed; /* Keep the background fixed */
-    filter: blur(5px); /* Optional: Blur the entire background */
 }
 
 .header {
     text-align: center;
     padding: 20px;
     background: rgba(255, 255, 255, 0.8); /* White background with transparency */
-    backdrop-filter: blur(10px); /* Apply blur effect */
+    backdrop-filter: blur(10px); /* Apply blur effect to the header */
     animation: fadeIn 1s ease; /* Fade-in effect */
 }
 
@@ -82,6 +81,27 @@ body {
     text-align: center;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
-    backdrop-filter: blur(10px); /* Apply blur effect */
+    backdrop-filter: blur(10px); /* Apply blur effect to the footer */
     animation: fadeIn 1s ease; /* Fade-in effect */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
