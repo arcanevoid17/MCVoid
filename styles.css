@@ -1,92 +1,197 @@
-/* General styles */
-body {
+/* Reset and General Styling */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
     color: #333;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    min-height: 100vh;
+    overflow: hidden;
+    animation: fadeInBackground 2s ease-in-out;
+}
+
+/* Background Blur Animation */
+@keyframes fadeInBackground {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(10px);
+    transform: scale(1.1);
+    opacity: 0.7;
+    animation: blurZoomIn 1.5s ease-in-out;
+    z-index: -1;
+}
+
+@keyframes blurZoomIn {
+    0% { opacity: 0; transform: scale(1.05); }
+    100% { opacity: 0.7; transform: scale(1.1); }
+}
+
+/* Content Fade-in and Scale */
+.content, .header, .footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: scale(0.95);
+    animation: fadeInScale 1.2s ease forwards;
+    transition: transform 0.3s;
+}
+
+@keyframes fadeInScale {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
 }
 
 .header {
-    text-align: center;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.8); /* White background with transparency */
-    backdrop-filter: blur(10px); /* Apply blur effect */
-    animation: fadeIn 1s ease; /* Fade-in effect */
-}
-
-.content {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.8); /* White background with transparency */
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    animation: slideIn 0.8s ease; /* Slide-in effect */
-}
-
-.category-section {
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.9); /* Slightly more opaque */
-    transition: transform 0.3s ease; /* Smooth scaling */
-}
-
-.category-section:hover {
-    transform: scale(1.02); /* Scale effect on hover */
-}
-
-/* Buttons */
-.download-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #4A90E2;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s; /* Transition for smooth hover */
-}
-
-.download-btn:hover {
-    background-color: #357ABD;
-    transform: translateY(-2px); /* Raise effect on hover */
-}
-
-/* Background image styling */
-body {
-    background-image: url('images/background.jpg'); /* Path to your background image */
-    background-size: cover; /* Cover the entire background */
-    background-attachment: fixed; /* Keep the background fixed */
-    filter: blur(5px); /* Optional: Blur the entire background */
+    margin-top: 50px;
+    animation-delay: 0.5s;
 }
 
 .footer {
+    margin-top: 40px;
+    animation-delay: 1.5s;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+    padding: 20px;
+    animation-delay: 1s;
+}
+
+/* Download Card Animation */
+.download-card {
+    background-color: #575757;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
     text-align: center;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
-    backdrop-filter: blur(10px); /* Apply blur effect */
-    animation: fadeIn 1s ease; /* Fade-in effect */
+    transition: transform 0.4s, box-shadow 0.4s;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInCard 1s ease forwards;
 }
 
-/* Keyframes for animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+@keyframes fadeInCard {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes slideIn {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.download-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image Hover Scale */
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.4s ease;
+}
+
+.download-card:hover .card-image {
+    transform: scale(1.05);
+}
+
+/* Button Bounce and Hover Effects */
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: bounceIn 0.5s ease;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.95); }
+    70% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.download-btn:hover {
+    background-color: #d3354f;
+    transform: scale(1.08);
+}
+
+/* Icon Styling */
+.icon {
+    width: 20px;
+    height: 20px;
+}
+/* Category Buttons Container */
+.category-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Category Button Styling */
+.category-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category-btn:hover {
+    background-color: #357ABD;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.category-btn:focus {
+    outline: 2px solid #ffffff;
+    background-color: #1D5A8A;
+    transform: translateY(-1px);
+}
+
+/* Icon within Button */
+.icon {
+    width: 20px;
+    height: 20px;
 }
