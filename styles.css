@@ -154,7 +154,7 @@ body {
     display: inline-block; /* Inline block for button */
     margin-top: 10px; /* Space above button */
     padding: 10px 15px; /* Button padding */
-    background-color: #4A90E2; /* Button background color */
+    background-color: #b729ca; /* Button background color */
     color: #fff; /* Button text color */
     text-decoration: none; /* Remove underline */
     border-radius: 5px; /* Rounded corners */
@@ -163,7 +163,7 @@ body {
 }
 
 .download-btn:hover {
-    background-color: #c546bf; /* Darker background on hover */
+    background-color: #da3c5e; /* Darker background on hover */
     transform: translateY(-2px); /* Raise effect on hover */
 }
 
@@ -218,6 +218,20 @@ body {
     font-style: italic; /* Italic style for names */
     font-size: 14px; /* Smaller font size for names */
     color: #ccc; /* Lighter color for names */
+}
+.go-back-btn {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #b729ca; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+}
+.go-back-btn:hover {
+    background-color: #da3c5e; /* Darker green on hover */
 }
 
 
