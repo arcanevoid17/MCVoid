@@ -142,7 +142,7 @@ body::before {
 }
 
 .download-btn:hover {
-    background-color: #45a049;
+    background-color: #c53b8c;
     transform: scale(1.08);
 }
 
