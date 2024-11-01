@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Center</title>
+    <title>TEST</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="mcvoid.css">
-    <!-- Favicon Link -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <!-- Header Section -->
     <header class="header">
@@ -17,17 +17,45 @@
     </header>
 
     <main class="content">
+        <!-- Announcement Section -->
+        <section id="announcement" class="section announcement">
+            <h2>Announcements</h2>
+            <p>New features added! Check out our latest tools and resources.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <h2>About Us</h2>
+            <p>We provide a comprehensive collection of downloads, tools, and resources for all your needs. Our mission is to ensure that you have access to the latest and most useful downloads available on the web.</p>
+        </section>
+
         <!-- Search Bar Section -->
         <section id="search-bar" class="section">
-            <input type="text" placeholder="Search for downloads..." class="search-input">
-            <button class="search-btn">Search</button>
+            <input type="text" placeholder="Search for downloads..." class="search-input" id="search-input">
+            <button class="search-btn" id="search-btn">Search</button>
         </section>
 
         <!-- Section 1: Featured Downloads -->
         <section id="featured-downloads" class="section">
             <h2>Featured Downloads</h2>
             <p>Discover our top-rated resources, handpicked for you.</p>
-            <!-- Add download cards here if necessary -->
+            <div class="featured-cards" id="featured-cards">
+                <div class="card" data-tags="game,tool">
+                    <h3><a href="downloads.html#game-tool-1" class="download-link">Game Tool 1</a></h3>
+                    <p>Latest version with amazing features.</p>
+                    <span class="tags">Tags: game, tool</span>
+                </div>
+                <div class="card" data-tags="productivity,app">
+                    <h3><a href="downloads.html#productivity-app" class="download-link">Productivity App</a></h3>
+                    <p>Boost your productivity with this app.</p>
+                    <span class="tags">Tags: productivity, app</span>
+                </div>
+                <div class="card" data-tags="development,kit">
+                    <h3><a href="downloads.html#development-kit" class="download-link">Development Kit</a></h3>
+                    <p>All-in-one toolkit for developers.</p>
+                    <span class="tags">Tags: development, kit</span>
+                </div>
+            </div>
         </section>
 
         <!-- Section 2: Popular Categories -->
@@ -35,17 +63,20 @@
             <h2>Popular Categories</h2>
             <p>Explore resources by category to find exactly what you need.</p>
             <div class="category-buttons">
-                <a href="https://test.com/gaming" target="_blank" class="category-btn">
+                <a href="downloads.html#gaming" target="_blank" class="category-btn">
                     <img src="icons/gaming-icon.png" alt="Gaming Icon" class="icon"> Gaming
                 </a>
-                <a href="https://test.com/development" target="_blank" class="category-btn">
+                <a href="downloads.html#development" target="_blank" class="category-btn">
                     <img src="icons/development-icon.png" alt="Development Icon" class="icon"> Development
                 </a>
-                <a href="https://test.com/productivity" target="_blank" class="category-btn">
+                <a href="downloads.html#productivity" target="_blank" class="category-btn">
                     <img src="icons/productivity-icon.png" alt="Productivity Icon" class="icon"> Productivity
                 </a>
-                <a href="https://test.com/education" target="_blank" class="category-btn">
+                <a href="downloads.html#education" target="_blank" class="category-btn">
                     <img src="icons/education-icon.png" alt="Education Icon" class="icon"> Education
+                </a>
+                <a href="downloads.html#tools" target="_blank" class="category-btn">
+                    <img src="icons/tools-icon.png" alt="Tools Icon" class="icon"> Tools
                 </a>
             </div>
         </section>
@@ -103,4 +134,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
