@@ -123,9 +123,9 @@ body {
     }
 }
 .content {
-    display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
-    justify-content: space-around; /* Space out the cards */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    gap: 20px; /* Space between cards */
     margin: 20px auto; /* Center the content */
     max-width: 1200px; /* Max width for content */
 }
@@ -134,10 +134,8 @@ body {
     background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    margin: 10px; /* Margin between cards */
     padding: 20px; /* Inner padding */
     text-align: center; /* Center text */
-    width: 300px; /* Fixed width for cards */
     transition: transform 0.3s; /* Smooth scaling effect */
 }
 
@@ -174,3 +172,4 @@ body {
     margin-right: 5px; /* Space between icon and text */
     vertical-align: middle; /* Align icon with text */
 }
+
