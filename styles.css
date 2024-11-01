@@ -54,7 +54,7 @@ body {
     justify-content: center;
     width: 120px; /* Set a fixed width for the boxes */
     height: 150px; /* Set a fixed height for the boxes */
-    background-color: #4A90E2; /* Background color */
+    background-color: #d1528d; /* Background color */
     color: #fff; /* Text color */
     text-decoration: none; /* Remove underline */
     border-radius: 10px; /* Rounded corners */
@@ -64,7 +64,7 @@ body {
 
 .category-box:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
-    background-color: #357ABD; /* Darker background on hover */
+    background-color: #a5396b; /* Darker background on hover */
 }
 
 .category-icon {
