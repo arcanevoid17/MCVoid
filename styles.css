@@ -1,0 +1,106 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    background-image: url('images/background.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-attachment: fixed; /* Keep the background fixed */
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    animation: fadeIn 1s ease; /* Fade-in effect */
+}
+
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.8s ease; /* Slide-in effect */
+}
+
+.announcement, .about, .categories, .search-section {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly more opaque */
+    transition: transform 0.3s ease; /* Smooth scaling */
+}
+
+.announcement:hover,
+.about:hover,
+.categories:hover,
+.search-section:hover {
+    transform: scale(1.02); /* Scale effect on hover */
+}
+
+/* Buttons */
+.category-btn, .search-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4A90E2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s; /* Transition for smooth hover */
+    font-size: 16px; /* Increase font size for better visibility */
+}
+
+.category-btn:hover,
+.search-btn:hover {
+    background-color: #357ABD;
+    transform: translateY(-2px); /* Raise effect on hover */
+}
+
+/* Search input */
+.search-input {
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border-color 0.3s; /* Smooth border transition */
+}
+
+.search-input:focus {
+    border-color: #4A90E2; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    animation: fadeIn 1s ease; /* Fade-in effect */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
