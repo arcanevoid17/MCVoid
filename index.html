@@ -3,49 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MCVOID - Download Minecraft Free Premium Essentials</title>
+    <title>TEST</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Favicon Link -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Header Section -->
     <header class="header">
-        <h1>MCVOID</h1>
-        <p>Your one-stop destination for the Minecraft Free Premium Essentials</p>
+        <h1>Download Center</h1>
+        <p>Your one-stop destination for the latest resources</p>
     </header>
 
     <main class="content">
-        <!-- Download Card 1 -->
-        <div class="download-card">
-            <img src="images/resource1.png" alt="Resource 1 Image" class="card-image">
-            <h2>Resource 1</h2>
-            <p>High-quality resource for developers and gamers.</p>
-            <button class="download-btn" onclick="download('https://link-hub.net/1117641/free-premium-mc-plugins')">
-                <img src="images/download-icon.png" alt="Download Icon" class="icon"> Download
-            </button>
-        </div>
+        <!-- Section 1: Featured Downloads -->
+        <section id="featured-downloads" class="section">
+            <h2>Featured Downloads</h2>
+            <p>Discover our top-rated resources, handpicked for you.</p>
+            <div class="download-card">
+                <img src="images/resource1.png" alt="Resource 1 Image" class="card-image">
+                <h3>Resource 1</h3>
+                <p>High-quality resource for developers and gamers.</p>
+                <button class="download-btn" onclick="download('https://example.com/resource1.zip')">Download</button>
+            </div>
+        </section>
 
-        <!-- Download Card 2 -->
-        <div class="download-card">
-            <img src="images/resource2.png" alt="Resource 2 Image" class="card-image">
-            <h2>Resource 2</h2>
-            <p>Essential tools for productivity and entertainment.</p>
-            <button class="download-btn" onclick="download('https://example.com/resource2.zip')">
-                <img src="images/download-icon.png" alt="Download Icon" class="icon"> Download
-            </button>
-        </div>
+        <!-- Section 2: Popular Categories -->
+        <section id="popular-categories" class="section">
+            <h2>Popular Categories</h2>
+            <p>Explore resources by category to find exactly what you need.</p>
+            <div class="category-grid">
+                <div class="category-item">Gaming</div>
+                <div class="category-item">Development</div>
+                <div class="category-item">Productivity</div>
+                <div class="category-item">Education</div>
+            </div>
+        </section>
 
-        <!-- Download Card 3 -->
-        <div class="download-card">
-            <img src="images/resource3.png" alt="Resource 3 Image" class="card-image">
-            <h2>Resource 3</h2>
-            <p>Top-rated plugins and utilities for customization.</p>
-            <button class="download-btn" onclick="download('https://example.com/resource3.zip')">
-                <img src="images/download-icon.png" alt="Download Icon" class="icon"> Download
-            </button>
-        </div>
+        <!-- Section 3: New Arrivals -->
+        <section id="new-arrivals" class="section">
+            <h2>New Arrivals</h2>
+            <p>Check out our latest resources, updated regularly.</p>
+            <div class="download-card">
+                <img src="images/resource2.png" alt="Resource 2 Image" class="card-image">
+                <h3>Resource 2</h3>
+                <p>Essential tools for productivity and entertainment.</p>
+                <button class="download-btn" onclick="download('https://example.com/resource2.zip')">Download</button>
+            </div>
+        </section>
+
+        <!-- Section 4: User Testimonials -->
+        <section id="user-testimonials" class="section">
+            <h2>User Testimonials</h2>
+            <p>See what our community has to say about our resources.</p>
+            <div class="testimonial">
+                <p>"Amazing resources! They've helped me improve my workflow significantly."</p>
+                <span>- Alex, Developer</span>
+            </div>
+            <div class="testimonial">
+                <p>"Highly recommend for anyone looking to enhance their gaming experience."</p>
+                <span>- Jordan, Gamer</span>
+            </div>
+        </section>
+
+        <!-- Section 5: Contact Us -->
+        <section id="contact-us" class="section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, we'd love to hear from you!</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </main>
 
+    <!-- Footer Section -->
     <footer class="footer">
-        <p>© 2024 Void Universe. All Rights Reserved.</p>
+        <p>© 2024 Download Center. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
