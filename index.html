@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEST</title>
+    <title>Download Center</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mcvoid.css">
     <!-- Favicon Link -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
@@ -16,6 +17,12 @@
     </header>
 
     <main class="content">
+        <!-- Search Bar Section -->
+        <section id="search-bar" class="section">
+            <input type="text" placeholder="Search for downloads..." class="search-input">
+            <button class="search-btn">Search</button>
+        </section>
+
         <!-- Section 1: Featured Downloads -->
         <section id="featured-downloads" class="section">
             <h2>Featured Downloads</h2>
@@ -28,22 +35,65 @@
             <h2>Popular Categories</h2>
             <p>Explore resources by category to find exactly what you need.</p>
             <div class="category-buttons">
-                <a href="https://example.com/gaming" target="_blank" class="category-btn">
+                <a href="https://test.com/gaming" target="_blank" class="category-btn">
                     <img src="icons/gaming-icon.png" alt="Gaming Icon" class="icon"> Gaming
                 </a>
-                <a href="https://example.com/development" target="_blank" class="category-btn">
+                <a href="https://test.com/development" target="_blank" class="category-btn">
                     <img src="icons/development-icon.png" alt="Development Icon" class="icon"> Development
                 </a>
-                <a href="https://example.com/productivity" target="_blank" class="category-btn">
+                <a href="https://test.com/productivity" target="_blank" class="category-btn">
                     <img src="icons/productivity-icon.png" alt="Productivity Icon" class="icon"> Productivity
                 </a>
-                <a href="https://example.com/education" target="_blank" class="category-btn">
+                <a href="https://test.com/education" target="_blank" class="category-btn">
                     <img src="icons/education-icon.png" alt="Education Icon" class="icon"> Education
                 </a>
             </div>
         </section>
 
-        <!-- Additional sections here -->
+        <!-- Section 3: Latest News -->
+        <section id="latest-news" class="section">
+            <h2>Latest News</h2>
+            <p>Stay updated with the latest releases and updates in the resource world.</p>
+            <ul class="news-list">
+                <li>New gaming tools available for download! Check them out now.</li>
+                <li>Productivity resources updated for better performance.</li>
+                <li>Join our upcoming webinar on game development!</li>
+            </ul>
+        </section>
+
+        <!-- Section 4: Newsletter Signup -->
+        <section id="newsletter" class="section">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest resources and news delivered straight to your inbox.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- Section 5: Contact Us -->
+        <section id="contact-us" class="section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, we'd love to hear from you!</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Section 6: Follow Us on Social Media -->
+        <section id="social-media" class="section">
+            <h2>Follow Us</h2>
+            <p>Connect with us on social media for updates and more!</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </section>
     </main>
 
     <!-- Footer Section -->
