@@ -131,12 +131,11 @@ body {
 }
 
 .download-card {
-    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    padding: 20px; /* Inner padding */
-    text-align: center; /* Center text */
-    transition: transform 0.3s; /* Smooth scaling effect */
+    border: 1px solid #ccc; /* Optional border */
+    padding: 16px; /* Space inside the card */
+    margin: 16px; /* Space between cards */
+    text-align: center; /* Center text inside cards */
+    width: 200px; /* Adjust width as needed */
 }
 
 .download-card:hover {
@@ -144,9 +143,9 @@ body {
 }
 
 .card-image {
-    width: 100%; /* Full width for images */
+    max-width: 100%; /* Ensure images are responsive */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Round image corners */
+
 }
 
 .download-btn {
@@ -167,9 +166,11 @@ body {
 }
 
 .icon {
-    width: 20px; /* Set the width of the icon */
-    height: 20px; /* Set the height of the icon */
-    margin-right: 5px; /* Space between icon and text */
+    width: 32px; /* Set width to 32 pixels */
+    height: 32px; /* Set height to 32 pixels */
     vertical-align: middle; /* Align icon with text */
+    margin-right: 8px; /* Space between icon and text */
 }
+
+
 
