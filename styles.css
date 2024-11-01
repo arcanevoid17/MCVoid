@@ -5,17 +5,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: url('images/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    position: relative;
-    color: #333;
-    min-height: 100vh;
-    overflow: hidden;
-    animation: fadeInBackground 2s ease-in-out;
-}
-
 /* Background Blur Animation */
 @keyframes fadeInBackground {
     0% { opacity: 0; }
