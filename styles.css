@@ -13,7 +13,9 @@ body {
 .header {
     text-align: center;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    background: rgba(255, 255, 255, 0.5); /* Transparent white background */
+    backdrop-filter: blur(5px); /* Optional: Adds a blur effect behind the header */
+    border-radius: 8px; /* Optional: Rounded corners for a sleek look */
     animation: fadeIn 1s ease; /* Fade-in effect */
 }
 
@@ -170,6 +172,52 @@ body {
     height: 32px; /* Set height to 32 pixels */
     vertical-align: middle; /* Align icon with text */
     margin-right: 8px; /* Space between icon and text */
+}
+.reviews {
+    margin-top: 20px; /* Space above reviews section */
+    text-align: left; /* Align text to the left */
+}
+
+.reviews h3 {
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.review {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    background-color: #444; /* Dark background for reviews */
+    color: #fff; /* White text color */
+    padding: 15px; /* Padding inside review boxes */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between reviews */
+}
+
+.review-profile {
+    width: 50px; /* Profile picture size */
+    height: 50px; /* Make it a square */
+    border-radius: 50%; /* Make it a circle */
+    margin-right: 15px; /* Space between image and text */
+}
+
+.review-content {
+    flex: 1; /* Allow content to fill remaining space */
+}
+
+.review p {
+    margin: 0 0 5px; /* Space below paragraph */
+}
+
+.star-rating {
+    color: #ffd700; /* Gold color for stars */
+    font-size: 16px; /* Adjust star size */
+}
+
+.review span {
+    display: block; /* Display name on a new line */
+    margin-top: 5px; /* Space above name */
+    font-style: italic; /* Italic style for names */
+    font-size: 14px; /* Smaller font size for names */
+    color: #ccc; /* Lighter color for names */
 }
 
 
