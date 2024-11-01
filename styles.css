@@ -151,3 +151,47 @@ body::before {
     width: 20px;
     height: 20px;
 }
+/* Category Buttons Container */
+.category-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Category Button Styling */
+.category-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category-btn:hover {
+    background-color: #357ABD;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.category-btn:focus {
+    outline: 2px solid #ffffff;
+    background-color: #1D5A8A;
+    transform: translateY(-1px);
+}
+
+/* Icon within Button */
+.icon {
+    width: 20px;
+    height: 20px;
+}
